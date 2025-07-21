@@ -1,0 +1,4 @@
+if __name__ == '__main__':
+    c="Hello, World!"
+    print(c)
+    
