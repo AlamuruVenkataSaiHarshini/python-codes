@@ -1,0 +1,8 @@
+def insertNodeAtHead(llist, data):
+    nn=SinglyLinkedListNode(data)
+    if llist is None:
+        llist=nn
+    else:
+        nn.next=llist
+        llist=nn
+    return llist
