@@ -1,0 +1,13 @@
+def insertNodeAtPosition(llist, data, position):
+    # Write your code here
+    nn=SinglyLinkedListNode(data)
+    i=llist
+    if position==0:
+        nn.next=llist
+        llist=nn
+    for j in range(0,position-1):
+        i=i.next
+    nn.next=i.next
+    i.next=nn
+    return llist
+    
