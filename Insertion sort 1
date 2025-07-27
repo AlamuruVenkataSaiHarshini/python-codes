@@ -1,0 +1,9 @@
+def insertionSort1(n, arr):
+    # Write your code here
+    for j in range(n-1,0,-1):
+        if arr[j]<arr[j-1]:
+            t=arr[j]
+            arr[j]=arr[j-1]
+            print(*arr)
+            arr[j-1]=t
+    print(*arr)
