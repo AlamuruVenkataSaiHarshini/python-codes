@@ -1,0 +1,20 @@
+def isBalanced(s):
+    # Write your code here
+    st=[]
+    for i in s:
+        if i=='(' or i=='['or  i=='{':
+            st.append(i)
+        else:
+            if len(st)==0:
+                return 'NO'
+            value=st.pop()
+            if i==')' and value!='(':
+                return 'NO'
+            elif i==']' and value!='[':
+                return 'NO'
+            elif i=='}' and value!='{':
+                return 'NO'
+    if len(st)==0:
+        return 'YES'
+    else:
+        return 'NO'
