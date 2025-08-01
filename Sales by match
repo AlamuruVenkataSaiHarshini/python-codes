@@ -174,3 +174,8 @@ if __name__ == '__main__':
     fptr.write(str(result) + '\n')
 
     fptr.close()
+or
+
+
+def sm(n,arr):
+   c=0
